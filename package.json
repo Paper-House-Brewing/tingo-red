@@ -31,12 +31,18 @@
     "name": "Diego Pérez",
     "email": "diego@cerovueltas.com.ar"
   },
-  "contributors": {
-    "name": "Alexandre Gaudet",
-    "email": "fakstory@gmail.com"
-  },
+  "contributors": [
+	  {
+		  "name": "Alexandre Gaudet",
+		  "email": "fakstory@gmail.com"
+	  },
+	  {
+		  "name": "Richard Gonzales",
+		  "email": "richard@paperhousebrewing.com"
+	  }
+  ],
   "license": "ISC",
   "dependencies": {
-    "tingodb": "^0.5.1"
+    "tingodb": "^0.6.1"
   }
 }

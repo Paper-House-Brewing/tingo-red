@@ -14,4 +14,4 @@ module.exports = function (RED) {
         });
     }
     RED.nodes.registerType("tingodb-remove", TingoDBRemoveNode);
-}
+};

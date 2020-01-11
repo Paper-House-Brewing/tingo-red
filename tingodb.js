@@ -8,6 +8,6 @@ module.exports = function (RED) {
 
     TingoDB.prototype.getDB = function () {
         return new Tingo.Db(this.path, { name: this.path  });
-    }
+    };
     RED.nodes.registerType("tingodb", TingoDB);
-}
+};
