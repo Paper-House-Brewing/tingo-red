@@ -7,7 +7,7 @@ module.exports = function (RED) {
 
         node.on('input', function (msg) {
             var db = RED.nodes.getNode(config.db).getDB();
-            console.log(msg.payload);
+            //console.log(msg.payload);
             //msg.payload = "tata"
             //node.send(msg);
             //collection.findOne({userId:msg.payload.params.userId}, printFunction)
