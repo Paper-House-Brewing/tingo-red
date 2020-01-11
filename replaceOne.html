@@ -1,0 +1,39 @@
+<script type="text/javascript">
+	RED.nodes.registerType('tingodb-replaceone', {
+		category: 'function',
+		color: '#a6bbcf',
+		defaults: {
+			db: { value: "", type: 'tingodb' },
+			collection: { value: '', },
+			upsert:     { value: false}
+		},
+		inputs: 1,
+		outputs: 1,
+		icon: "find.png",
+		label: function () {
+			return (this.collection || "tingodb") + " (replaceOne)";
+		}
+	});
+</script>
+
+<script type="text/x-red" data-template-name="tingodb-replaceone">
+    <div class="form-row">
+        <label for="node-input-db"><i class="icon-tag"></i> DB</label>
+        <input type="text" id="node-input-db" placeholder="DB">
+    </div>
+    <div class="form-row">
+        <label for="node-input-collection"><i class="icon-tag"></i> Collection</label>
+        <input type="text" id="node-input-collection" placeholder="Collection">
+    </div>
+    <div class="form-row">
+    <label></label>
+        <input type="checkbox" id="node-input-upsert" style="margin-left: 0px; vertical-align: top; width: auto !important;"> <label style="width:auto !important;" for="node-input-upsert">upsert</label>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="tingodb-replaceone">
+    <p>Replaces or creates a document from a collection.</p>
+    <p><code>msg.predicate</code> contains the key to update i.e: <code>{key:1234}</code></p>
+    <p><code>msg.update</code> contains the object to update.</p>
+    <p>if <code>upsert</code> is checked and the object does not exist in the database, the object will be created.</p>
+</script>
