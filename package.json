@@ -14,6 +14,7 @@
       "tingodb": "tingodb.js",
       "tingodb-find": "find.js",
       "tingodb-findOne": "findOne.js",
+      "tingodb-replaceOne": "replaceOne.js",
       "tingodb-insert": "insert.js",
       "tingodb-remove": "remove.js",
       "tingodb-update": "update.js"
@@ -32,14 +33,14 @@
     "email": "diego@cerovueltas.com.ar"
   },
   "contributors": [
-	  {
-		  "name": "Alexandre Gaudet",
-		  "email": "fakstory@gmail.com"
-	  },
-	  {
-		  "name": "Richard Gonzales",
-		  "email": "richard@paperhousebrewing.com"
-	  }
+    {
+      "name": "Alexandre Gaudet",
+      "email": "fakstory@gmail.com"
+    },
+    {
+      "name": "Richard Gonzales",
+      "email": "richard@paperhousebrewing.com"
+    }
   ],
   "license": "ISC",
   "dependencies": {
